@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using DbConnection;
-using TodoList.Models;
 namespace TodoList.Controllers
 {
     public class ListController : Controller
