@@ -17,7 +17,7 @@ namespace TodoList.Controllers
         [Route("/list")]
         public JsonResult List()
         {  
-            //Normally obviously I would use a orm and/or seperate these into the models but this is much quicker and I don't have as much experience with entity (I know this is vaulnarable to SQL injection).
+            //Normally obviously I would use a orm but this is much quicker and I don't have as much experience with entity (I know this is vaulnarable to SQL injection).
             List<Dictionary<string, object>> AllItems = DbConnector.Query("SELECT * FROM items");
             return Json(AllItems);
         }
